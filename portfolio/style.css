@@ -1,0 +1,159 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+}
+.mainContainer{
+    background-color: black;
+}
+
+.secondRow h1{
+font-size: 50px;
+font-weight: 600;
+
+
+}
+.secondRow h6{
+    font-size: 25px;
+    font-weight: 700;
+    
+    }
+.secondRowText{
+    padding-left: 80px;
+    
+    
+}
+.secondRow {
+    position: relative;
+    top: -100px;
+    background-image: url('background.png');
+    background-size: cover;
+    background-position: center top;
+    height: 800px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media (max-width: 768px) {
+    .secondRow {
+        height: 400px; /* Adjust the height for smaller screens */
+        background-size: cover;
+        background-position: right;
+        position: relative;
+    top: 0px;
+       
+    }
+    .secondRow h1{
+        font-size: 40px;
+        font-weight: 600;
+        }
+        .secondRow h6{
+            font-size: 17px;
+            font-weight: 700;
+            
+            }
+    }
+
+    @media (max-width: 576px) {
+        .secondRow {
+            background-image: none; /* Remove the background image for smaller screens */
+        }
+    }
+
+    .talents{
+        display: flex;
+        justify-content: space-evenly;
+        
+    }
+    .talents a{
+        font-weight: 500;
+        color: rgb(202, 202, 202);
+    }
+    .services{
+        gap: 30px;
+    }
+    
+    .serviceBg{
+        background-color: rgba(84, 80, 80, 0.413);
+        padding: 20px;
+        transition: all 0.3s ease;
+        box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.3);
+    }
+    .serviceBg:hover {
+        background-color: #dc3545;
+        transform: translate(0, -5px);
+        box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.4);
+      }
+      .workPhoto{gap: 20px;
+      padding-bottom: 100px;
+    }
+    .check img{
+        transition: transform 0.5s ease-in-out;
+        
+    }
+      .check:hover img{
+       transform: scale(1);
+      }
+    
+     .myworkh{
+        padding: 20px;
+        margin-left: 130px;
+        margin-top: 50px;
+     } 
+     .check{
+        position: relative;
+     }
+     .layer{
+        width: 94%;
+        height: 0;
+        background: linear-gradient(rgba(0,0,0,0.6),#dc3545);
+        border-radius: 5px;
+       overflow: hidden;
+        left: 12;
+        bottom: 0;
+        position: absolute;
+        top: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+        transition: height 0.5s;
+
+        
+     }
+     .layer h3{
+        font-weight: 500;
+        margin-bottom: 20px;
+     }
+     .layer a{
+        margin-top: 20px;
+        color: #ff004f;
+        background: #fff;
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        font-size: 18px;
+        line-height: 60px;
+     }
+     .workPhoto :hover .layer{
+      height: 100%;
+      padding: 0px;
+     }
+     .form  input[type="text"], input[type="email"], textarea {
+        background-color:rgba(247, 246, 246, 0.968); 
+        color: black;
+    }
+    .social-links{
+        display: flex;
+        gap: 12px;
+        padding: 5px;
+    }
+    .social-media{
+        color: white;
+        transition: transform 0.2s;
+    }
+    .social-media:hover{
+        color: #dc3545;
+        transform: scale(1.);
+    }
